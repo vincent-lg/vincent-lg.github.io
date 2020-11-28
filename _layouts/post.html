@@ -13,14 +13,13 @@ layout: default
     Written on {{ page.date | date: "%B %e, %Y" }}
   </div>
 
-  <h3>Tags</h3>
-  <p>{{ page.tags }} or {{ tags }}</p>
-  <span>[
+  <h4>Tags</h4>
+  <span>
     {% for tag in page.tags %}
       {% capture tag_name %}{{ tag }}{% endcapture %}
       <a href="/tag/{{ tag_name }}"><code class="highligher-rouge"><nobr>{{ tag_name }}</nobr></code>&nbsp;</a>
     {% endfor %}
-  ]</span
+  </span
 
   {% include disqus.html %}
 </article>
