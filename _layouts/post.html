@@ -14,6 +14,7 @@ layout: default
   </div>
 
   <h3>Tags</h3>
+  <p>{{ page.tags }} or {{ tags }}</p>
   <span>[
     {% for tag in page.tags %}
       {% capture tag_name %}{{ tag }}{% endcapture %}
